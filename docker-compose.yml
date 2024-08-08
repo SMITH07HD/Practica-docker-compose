@@ -1,0 +1,10 @@
+version: '27.0'
+services:
+  web:
+    image: my-web-app:latest
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/code
+    environment:
+      - FLASK_ENV=development
